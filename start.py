@@ -29,7 +29,7 @@ class ChatApp:
         self.output_text.pack(pady=10)
 
         # 运行按钮
-        self.run_button = tk.Button(root, text="运行", command=self.run_program_threaded)
+        self.run_button = tk.Button(root, text="提交", command=self.run_program_threaded)
         self.run_button.pack(pady=10)
 
     def run_program_threaded(self):
