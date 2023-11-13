@@ -48,7 +48,7 @@
 python ./start.py
 ```
 
-2.根据需求将代码和补充内容输入到对应文本框中，点击“提交，然后稍等片刻即可得到结果。”
+2.根据需求将代码和补充内容输入到对应文本框中，点击“提交”，然后稍等片刻即可得到结果。
 
 ## 排错
 
@@ -75,4 +75,4 @@ KeyError: 'result'
 requests.exceptions.ProxyError: HTTPSConnectionPool(host='aip.baidubce.com', port=443): Max retries exceeded with url: /oauth/2.0/token?grant_type=client_credentials&client_id=%09xlebbPKwsMWyCsMvLO13Irvs&client_secret=OaTeLIwkmX3IiQUGRaAydTGYW5A5SC35 (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None)))
 ```
 
-检查网络连接，是否启用代理。关闭代理运行。
+检查网络连接，是否启用代理。在少部分网络环境下，需要关闭代理运行该程序，否则百度千帆可能会禁止访问。。
