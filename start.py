@@ -10,7 +10,7 @@ class ChatApp:
     def __init__(self, root):
         self.root = root
         self.root.title("DebugThinker-PythonUI")
-        self.root.geometry("399x688")
+        self.root.geometry("399x699")
 
         # 输入框
         self.context_code_label = tk.Label(root, text="在此输入代码：")
@@ -32,6 +32,10 @@ class ChatApp:
         # 运行按钮
         self.run_button = tk.Button(root, text="提交", command=self.run_program_threaded)
         self.run_button.pack(pady=10)
+
+        # CopyRight
+        self.output_text_label = tk.Label(root, text="Copyright © 2023 Gloridust")
+        self.output_text_label.pack(pady=5)
 
     def run_program_threaded(self):
         # 在单独的线程中运行 run_program 方法
