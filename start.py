@@ -10,9 +10,9 @@ class ChatApp:
     def __init__(self, root):
         self.root = root
         self.root.title("DebugThinker-PythonUI")
-        self.root.geometry("399x666")
+        self.root.geometry("399x688")
 
-        # 输入框和标签
+        # 输入框
         self.context_code_label = tk.Label(root, text="在此输入代码：")
         self.context_code_label.pack(pady=5)
         self.context_code_entry = tk.Text(root, height=10, width=50)
@@ -23,8 +23,9 @@ class ChatApp:
         self.context_word_entry = tk.Text(root, height=10, width=50)
         self.context_word_entry.pack(pady=5)
 
-        # 输出文本框
-        self.result_label = tk.Label(root, text="诊断结果：")
+        # 输出框
+        self.output_text_label = tk.Label(root, text="诊断结果：")
+        self.output_text_label.pack(pady=5)
         self.output_text = tk.Text(root, height=16, width=50)
         self.output_text.pack(pady=10)
 
@@ -69,7 +70,7 @@ class ChatApp:
         except json.JSONDecodeError:
             self.print_to_output("无法解析响应 JSON 数据")
 
-        self.print_to_output("已完成运行")
+        self.print_to_output("已完成运行，以上就是本次诊断结果的全部内容。")
 
     def get_access_token(self):
         url = "https://aip.baidubce.com/oauth/2.0/token"
