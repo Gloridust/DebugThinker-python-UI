@@ -12,9 +12,18 @@
 
 ## 开始使用
 
-### 配置环境
+### 获取API
 
-在Python3环境下，执行以下命令安装需要用到的软件包：  
+1.注册并 登录 [百度千帆大模型平台控制台](https://console.bce.baidu.com/qianfan/ais/console/onlineService) 在“在线服务”区域，开通“ERNIE-Bot大模型公有云在线调用服务”。
 
-  pip3 install requests json tkinter
+![img1](./src/img/1.png)
 
+2.在“应用接入”处创建应用，得到API_KEY和SECRET_KEY并保存好。
+
+![img2](./src/img/2.png)
+
+### 配置程序
+
+1.将同目录下的[example.config.py](./example.config.py)重命名为[config.py](./config.py)文件
+
+2.将刚刚获得的API_KEY和SECRET_KEY填入[config.py](./config.py)并保存。
