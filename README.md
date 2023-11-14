@@ -14,7 +14,11 @@
 
 ### v1.1.2
 
-在pyinstaller打包时增加参数 --noconsole 来避免弹出命令行窗口，只运行GUI界面。你也可以用以下命令自行打包：
+在pyinstaller打包时增加参数 --noconsole 来避免弹出命令行窗口，只运行GUI界面。
+
+- fix：弹出空白的命令行窗口
+
+你也可以用以下命令自行打包：
 
 ```
 pyinstaller --onefile --noconsole start.py
