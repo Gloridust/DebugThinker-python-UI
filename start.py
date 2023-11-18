@@ -26,7 +26,7 @@ class ChatApp:
         # 输出框
         self.output_text_label = tk.Label(root, text="诊断结果：")
         self.output_text_label.pack(pady=5)
-        self.output_text = tk.Text(root, height=16, width=50)
+        self.output_text = tk.Text(root, height=15, width=50)
         self.output_text.pack(pady=10)
 
         # 运行按钮
