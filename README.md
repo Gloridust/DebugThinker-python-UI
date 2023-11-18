@@ -21,7 +21,7 @@
 你也可以用以下命令自行打包：
 
 ```
-pyinstaller --onefile --noconsole start.py
+pyinstaller --onefile --noconsole DebugThinker-PythonUI.py
 ```
 
 ### v1.1.1
@@ -29,7 +29,7 @@ pyinstaller --onefile --noconsole start.py
 利用pyinstaller打包成一个可执行文件，极大程度上减少了使用成本，开箱即用。你也可以用以下命令自行打包：
 
 ```
-pyinstaller --onefile start.py
+pyinstaller --onefile DebugThinker-PythonUI.py
 ```
 
 ### v1.1.0
@@ -62,10 +62,10 @@ pyinstaller --onefile start.py
 
 ### 使用
 
-1.在项目根目录中打开终端，运行[start.py](./start.py)主程序。
+1.在项目根目录中打开终端，运行[DebugThinker-PythonUI.py](./DebugThinker-PythonUI.py)主程序。
 
 ```
-python ./start.py
+python ./DebugThinker-PythonUI.py
 ```
 
 2.根据需求将代码和补充内容输入到对应文本框中，点击“提交”，然后稍等片刻即可得到结果。
@@ -80,7 +80,7 @@ Traceback (most recent call last):
   File "C:\Users\glori\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
     return self.func(*args)
            ^^^^^^^^^^^^^^^^
-  File "E:\GitHub\DebugThinker-python-UI\start.py", line 62, in run_program
+  File "E:\GitHub\DebugThinker-python-UI\DebugThinker-PythonUI.py", line 62, in run_program
     self.print_to_output(result['result'])
                          ~~~~~~^^^^^^^^^^
 KeyError: 'result'
